@@ -1,12 +1,19 @@
+<app-success-alert></app-success-alert>
+<div app-servers></div>
 
-<div><app-servers></app-servers></div>
 <div style="margin-top: 20px;">
     <button type="button" class="btn btn-info">Welcome App Component</button>
 </div>
-<div style="margin-top: 20px;">
+<div style="margin-top: 40px;">
    <input type="text" [(ngModel)]="TypedText">
 </div>
-<p>{{TypedText}}</p>
+<div class="container" >
+  <div class="row">
+    <div class="col-xs-12">
+      <p>{{TypedText}}</p>
+    </div>
+</div>
+</div>
 
 
 

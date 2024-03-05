@@ -1,4 +1,12 @@
-<p>Servers Component here</p>
+<div>
+
+<input type="Text" class="form-control" (input)="OnUpdateServer($event)">
+</div>
+
+<p>Danger Alert here with ServerName: {{ getServerName()}} and Id :{{ServerId}}</p>
+<button name="Serverbutton" class="btn btn-primary" [disabled]="!AllowServer"
+(click)="OnServerCreated()" >Add Server</button>
+<label>{{AllowServer}}</label>
 <div><app-server></app-server></div>
 
 

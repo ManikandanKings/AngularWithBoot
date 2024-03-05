@@ -17,8 +17,8 @@ TypedText="";
 function sequenceSubscriber(observer: Observer<number>) {
   // synchronously deliver 1, 2, and 3, then completes
   observer.next(1);
-  observer.next(2);
-  observer.next(3);
+  //observer.next(2);
+ // observer.next(3);
   observer.complete();
 
   // Return the unsubscribe function.

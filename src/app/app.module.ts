@@ -5,6 +5,7 @@ import { BrowserModule } from '@angular/platform-browser';
 import {FormsModule} from '@angular/forms'
 import { AppComponent } from './app.component';
 import { ServersComponent } from './servers/servers.component';
+import { SuccessAlertComponent } from './success-alert/success-alert.component';
 
 
 
@@ -12,7 +13,8 @@ import { ServersComponent } from './servers/servers.component';
   declarations: [
     AppComponent,
     ServerComponent,
-    ServersComponent
+    ServersComponent,
+    SuccessAlertComponent
   ],
   imports: [
     BrowserModule,
