@@ -1,6 +1,12 @@
 <div>
-
+  <!-- UsernameTask -->
+  <label>UserName</label>
+ <input type="Text" class="form-control" [(ngModel)]="UserName">
+ <p>{{UserName}}</p>
+ <button class="btn btn-primary" (click)="OnClearUserName()" [disabled]="UserName==''" >Clear</button>
+ <!-- UsernameTask -->
 <input type="Text" class="form-control" (input)="OnUpdateServer($event)">
+<input type="Text" class="form-control" [(ngModel)]="ServerName">
 </div>
 
 <p>Danger Alert here with ServerName: {{ getServerName()}} and Id :{{ServerId}}</p>

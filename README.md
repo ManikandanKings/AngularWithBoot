@@ -28,3 +28,6 @@ To get more help on the Angular CLI use `ng help` or go check out the [Angular C
 
 commands:
   ng g c Server[ Used to generate Component]
+
+
+[nhModel] used for twoway binding [intial set values reflected in UI]

@@ -1,0 +1,11 @@
+
+<div  class="container">
+
+<label for="name">UserName: </label>
+<input class="form-control"  [formControl]="name">
+<p>Value: {{ name.value }}</p>
+<input class="form-control" [formControl]="Password">
+<p>Password: {{ Password.value }}</p>
+
+<button type="button" class="nav-item" (click)="updateName()">Update Name</button>
+</div>

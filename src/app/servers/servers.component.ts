@@ -10,8 +10,10 @@ import { Component } from '@angular/core';
 export class ServersComponent
  {
     ServerId : number=10
-    ServerName : string= "ServersComponent"
+    ServerName : string= "My server"
+    UserName : string =''
     AllowServer : boolean =false;
+
       constructor()
       {
           setTimeout(()=>{
@@ -27,6 +29,8 @@ export class ServersComponent
     OnServerCreated()
     {
        alert("You have clicked Add server button");
+
+
     }
 
     OnUpdateServer(event:Event)
@@ -35,6 +39,11 @@ export class ServersComponent
       // console.log(event);
       // alert((<HTMLInputElement>event.target).value)
       return this.ServerName=(<HTMLInputElement>event.target).value;
+    }
+
+    OnClearUserName()
+    {
+      this.UserName='';
     }
 
   }
